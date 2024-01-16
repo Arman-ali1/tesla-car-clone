@@ -4,47 +4,12 @@ import bcrypt from "bcrypt"
 
 const orderSchema = new Schema(
     {
-        title: {
-            type: String,
-            required: true,
-            lowercase: true,
-            trim: true, 
-            index: true
-        },
-        fullName: {
-            type: String,
-            required: true,
-           
-            lowercase: true,
-            trim: true, 
-            index: true
-        },
-        email: {
-            type: String,
-            required: true,
-            unique: true,
-            lowecase: true,
-            trim: true, 
-        },
-        contact: {
-            type: Number,
-            
-            unique: true,
-        },
-        address: {
-            type: String,
-           
-            trim: true, 
-            index: true
-        },
-       
-        query: {
-            type: String,
-           
-        },
-        refreshToken: {
-            type: String
-        }
+    title: String,
+    fullName: { type: String, unique: true, required: true },
+    email: String,
+    contact: String,
+    address: String,
+    query: String,
 
     },
     {

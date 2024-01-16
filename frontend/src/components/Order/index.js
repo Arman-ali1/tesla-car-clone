@@ -28,7 +28,7 @@ const Order = () =>{
 
     const orderNow = async(e) =>{
         e.preventDefault();
-
+        console.log(fullName,email,title,contact,address,query);
         {!fullName && alert('Please Enter Your Name!')}
 
         await axios.post("http://localhost:8000/api/v1/users/order",{title,fullName,email,contact,address,query})
@@ -45,7 +45,7 @@ const Order = () =>{
         }).catch((error) =>  {
             error.message.replace(".", "");
             alert(error.message + " (" + error.code + ")");
-            document.getElementById("password").value = "";
+            // document.getElementById("password").value = "";
         })
 
     }
@@ -71,13 +71,13 @@ const Order = () =>{
                     <label htmlFor="text" >Full Name</label>
                     <input type='text' id='fname' value={fullName} onChange={(e)=> setFullname(e.target.value)} />
                     <label htmlFor="text" >Contact No:</label>
-                    <input type='number' id='lname' value={fullName} onChange={(e)=> setcontact(e.target.value)} />
+                    <input type='text' id='lname'  onChange={(e)=> setcontact(e.target.value)} />
                     <label htmlFor="email" >Email Address</label>
                     <input type='email' id="email" value={email} onChange={(e)=> setEmail(e.target.value) }/>
                     <label htmlFor="text">Address</label>
-                    <input type='text' id="fname" value={fullName} onChange={(e)=> setaddress(e.target.value) }/>
+                    <input type='text' id="fname"  onChange={(e)=> setaddress(e.target.value) }/>
                     <label htmlFor="text">Query</label>
-                    <input type='text' id="fname" value={fullName} onChange={(e)=> setquery(e.target.value) }/>
+                    <input type='text' id="fname"  onChange={(e)=> setquery(e.target.value) }/>
 
                     <button onClick={orderNow}>Orger Now</button>
                 

@@ -106,7 +106,7 @@ export const Content = styled.div`
     }
 
     .box1{
-        background-image: url('/images/solar_1.webp');
+        background-image: url('/images/3rd-party.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -116,18 +116,6 @@ export const Content = styled.div`
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-    }
-    .box3{
-        width: 318px;
-        height: 110px;
-        background-image: url('/images/3rd-party.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: white;
-        opacity: 0.4;
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
     }
     .desc{
         height: 110px;

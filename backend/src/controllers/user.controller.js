@@ -121,7 +121,6 @@ const orderCar = asyncHandler( async (req, res) => {
         address,
         query,
     })
-
     const createdOrder = await Order.findById(order._id).select(
         "-password -refreshToken"
     )

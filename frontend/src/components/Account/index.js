@@ -93,9 +93,9 @@ const Account = () =>{
                 <div className="container" >
                     <div className="box box1" >
                         <div className="desc" >
-                            <h3>Order Tesla Solar</h3>
+                            <h3>Order Tesla Solar car</h3>
                             <p>Produce energy to power your Tesla life</p>
-                            <a href="#" >View Solar</a>
+                            <a href="#" >View Solar car</a>
                         </div>
                     </div>
                     <div className="box box2">
@@ -105,13 +105,7 @@ const Account = () =>{
                             <Link to='/'>Shop Now</Link>
                         </div>
                     </div>
-                    <div className="box_fade" >
-                        <div className="box3" ></div>
-                        <div className="desc fade" >
-                            <h3>Purchased a car from a third party?</h3>
-                            <a href="#">Add</a>
-                        </div>
-                    </div>
+                    
                 </div>
             </Content>
         </Wrapper>
