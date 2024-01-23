@@ -46,7 +46,7 @@ function Section({ title,desc,backgroundImg,link,leftbtn,rightbtn,arrow,range,sp
                             <p>0-60 mph*</p>
                         </div>
                         <div className="Specs" >
-                            <h2>{top} mph</h2>
+                            <h2>{top} kmph</h2>
                             <p>Top Speed</p>
                         </div>
                         {hp && 
